@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Recoleta;
+  src: url("Recoleta-RegularDEMO.otf") format("opentype");
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+}
+
+.quote {
+  align-items: center;
+  color: #000;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+  max-width: 1260px;
+  padding: 20px;
+  text-align: center;
+  width: 100vw;
+}
+
+#quoteblock {
+  font-family: Recoleta;
+  font-size: 5vw;
+  font-weight: 500;
+  line-height: 1.15em;
+  transition: opacity 250ms linear;
+}
+
+@media {
+  body {
+    background-color: #000;
+  }
+
+  .quote {
+    color: #fff;
+  }
+}
